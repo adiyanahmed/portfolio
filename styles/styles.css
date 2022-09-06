@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --color-one: #191d2b;
+  --color-two: #FF5733;
+  --color-three: #FFBD33;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-grey-one: #dbe1e8;
+  --color-grey-two: #b2becd;
+  --color-grey-three: #6c7983;
+  --color-grey-four: #454e56;
+  --color-grey-five: #2a2e35;
+  --color-grey-six: #12181b;
+  --br-sm-2: 14px;
+  --fade: transition: all .3s ease-in-out;
+}
+
+li {
+  display: inline-block;
+}
+
+body {
+  background-color: var(--color-one);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-white);
+  transition: all 0.3s ease-in-out;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+header {
+  height: 100vh;
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 3rem 18rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section {
+  transform: translateY(-100%) scale(0);
+  transition: var(--fade);
+  background-color: var(--color-one);
+}
+
+.sec1 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec2 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec3 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec4 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  right: 4%;
+  z-index: 10;
+}/*# sourceMappingURL=styles.css.map */
