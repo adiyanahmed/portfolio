@@ -44,9 +44,9 @@ a{
 header{
     z-index: 100;
     position:fixed;
-    top: 10px;
+    top: .1rem;
     left: 10px;
-    height:100vh;
+    height:10vh;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -61,8 +61,8 @@ min-height: 100vh;
 }
 
 footer{
-    position: absolute;
-    z-index:99;
+    position: fixed;
+    z-index:100;
     bottom: 0;
     left: 10px;
     width: 100%;
@@ -71,10 +71,17 @@ footer{
 section{
     min-height: 100vh;
     width: 100%;
-    padding: 4rem 18rem;
+    padding: 3rem 3rem;
     position: absolute;
     left: 0;
     top: 0;
+}
+
+h2{
+    font-size: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section{
@@ -124,11 +131,11 @@ section{
     justify-content: center;
     position:fixed;
     top:50%;
-    right:4%;
+    left: 4%;
     z-index:10;
     .active-button{
         background-color: var(--color-two) !important;
-        transition: var(--fade);
+        
         i{
             color: var(--color-white) !important;
         }
@@ -153,3 +160,56 @@ section{
         
     }
 }
+
+
+.home-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:2rem;
+    .home-left{
+        display:flex;
+        align-items:center;
+        position:relative;        
+        
+        .shape-h{
+            transition: var(--fade);
+            width:80%;
+            height:100%;
+            background-color: var(--color-three);
+            left:0;
+            top:0;
+            z-index:-1;
+            
+        }
+        .image{
+            border-radius: var(--br-sm-2);
+            img{
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+                transform:rotate(90deg);
+            }
+        }
+       
+    }
+
+    .home-right{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        .name{
+            font-size: 1.8rem;
+            padding-bottom: 0.5rem;
+            span{
+                color: var(--color-two);
+            }      
+            
+        
+        }
+        p{
+            font-size: 1rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+}
+
