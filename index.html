@@ -10,36 +10,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <!--all the information on the rest of the site-->
 <body class="main-content">
 
-	<header class="section sec1 header active">
-		
-		<nav>
-			<ul>
-				<li>HOME</li>
-				<li>ABOUT</li>
-				<li>PROJECTS</li>
-				<li>RESUME</li>
-			</ul>
-			<ul>
-				<li><i class="fa-brands fa-github"></i></li>
-				<li><i class="fa-brands fa-linkedin"></i></li>
-				<li><i class="fa fa-envelope" aria-hidden="true"></i></li>
-			</ul>
-			
-			<hr>
-		</nav>
+	<header>
 		<h1>Adiyan Ahmed :)</h1>
 	</header>
 
 	<main>
-		<section class="section sec2 home">
+		<section class="section sec2 home active" id="home">
 			<h2>Home</h2>
 			<p>Hi, my name is Adiyan Ahmed. Welcome to my website portfolio!
 			I've created this website in order to teach myself web development
@@ -49,7 +33,7 @@
 			other social media platforms where I can be reached. </p>
 		</section>
 
-		<section class="section sec3 about">
+		<section class="section sec3 about" id="about">
 			<h2>About</h2>
 			<p>About myself, I am 20 years old and a 3rd year Computer Engineering
 			student at McMaster University. I have a very strong interest in technology
@@ -60,31 +44,39 @@
 			to talk :)</p>
 		</section>
 
-		<section class="section sec4 projects"></section>
+		<section class="section sec4 resume" id="resume">
+			<h2>Resume</h2>
+		</section>
 
-		<section class="section sec5 resume"></section>
+		<section class="section sec5 projects" id="projects">
+			<h2>Projects</h2>
+		</section>
 	</main>
 	
 	<!--Navigation buttons-->
 	<div class="controls">
-		<div class="control control-1 active-button">
+		<div class="control control-1 active-button" data-id="home">
 			<i class="fa-solid fa-igloo"></i>
 		</div>
-		<div class="control control-2">
+		<div class="control control-2" data-id="about">
 			<i class="fa-solid fa-user"></i>
 		</div>
-		<div class="control control-3">
+		<div class="control control-3" data-id="resume">
 			<i class="fa-solid fa-file-invoice"></i>
 		</div>
-		<div class="control control-4">
+		<div class="control control-4" data-id="projects">
 			<i class="fa-solid fa-diagram-project"></i>
 		</div>
 	</div>
 
-	
-	<button>View Projects</button>
-	<button>View Resume</button>
+	<footer>
+		<ul>
+			<li><i class="fa-brands fa-github"></i></li>
+			<li><i class="fa-brands fa-linkedin"></i></li>
+			<li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+		</ul>
+	</footer>
 
 </body>
-
+<script src="app.js"></script>
 </html>
