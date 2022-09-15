@@ -26,10 +26,7 @@ html {
     --shadow-one: 0 3px 15px rgba(0,0,0,0.3);
 }
 
-li{
-    display: inline-block;
-}
-
+//General Page Settings
 body{
     background-color: var(--color-one);
     font-family: 'Ubuntu', sans-serif;
@@ -38,21 +35,16 @@ body{
     transition: all .3s ease-in-out;
 }
 
+li{
+    display: inline-block;
+}
+
+
 a{
     display:inline-block;
     text-decoration: none;
     color: inherit;
     font-family: inherit;
-}
-
-header{
-    z-index: 100;
-    position:fixed;
-    top: 0.2rem;
-    left: 0.5rem;
-    height:15vh;
-    color: var(--color-white);
-    overflow: hidden;
 }
 
 #page-container{
@@ -64,6 +56,26 @@ min-height: 100vh;
     padding-bottom: 2.5rem;
 }
 
+
+//Header
+header{
+    z-index: 100;
+    position:fixed;
+    top: 0.2rem;
+    left: 0.5rem;
+    height:15vh;
+    color: var(--color-white);
+    overflow: hidden;
+}
+
+h2{
+    font-size: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//Footer + Footer Controls
 footer{
     position: fixed;
     z-index:100;
@@ -94,8 +106,9 @@ button{
     background-color:transparent;
     color:white;
     border:none;
-    
 }
+
+//General Settings for all site sections
 section{
     min-height: 100vh;
     width: 100%;
@@ -103,13 +116,6 @@ section{
     position: absolute;
     left: 0;
     top: 0;
-}
-
-h2{
-    font-size: 2rem;
-    display:flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .section{
@@ -146,6 +152,32 @@ h2{
         }
         100%{
             transform:translateY(0) scaleY(1);
+        }
+    }
+}
+
+//Page Section Titles 
+.title-main{
+    text-align: center;
+    h2{
+        position:relative;
+        text-transform:uppercase;
+        font-size:4rem;
+        font-weight:700;
+        span{
+            color:var(--color-two);
+
+        }
+        .bg-text{
+            position: absolute;
+            top:50%;
+            left:50%;
+            color:var(--color-grey-four);
+            transform:var(--fade);
+            z-index:-1;
+            transform: translate(-50%,-50%);
+            font-weight: 800;
+            font-size:6rem;
         }
     }
 }
@@ -243,32 +275,6 @@ h2{
     }
 }
 
-//Used for titles of each page 
-.title-main{
-    text-align: center;
-    h2{
-        position:relative;
-        text-transform:uppercase;
-        font-size:4rem;
-        font-weight:700;
-        span{
-            color:var(--color-two);
-
-        }
-        .bg-text{
-            position: absolute;
-            top:50%;
-            left:50%;
-            color:var(--color-grey-four);
-            transform:var(--fade);
-            z-index:-1;
-            transform: translate(-50%,-50%);
-            font-weight: 800;
-            font-size:6rem;
-        }
-    }
-}
-
 //About Page
 .aboutContainer{
     display: grid;
@@ -280,7 +286,7 @@ h2{
     padding-right:2rem;
     .aboutLeft{
         display:grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr 1fr;
         grid-gap:1.5rem;
         padding-right:1rem;
         .aboutItem{
