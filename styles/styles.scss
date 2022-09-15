@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+html {
+    overflow-y: scroll;
+  }
+
 :root{
     --color-one: #21263b;
     --color-two: #FF5733;
@@ -64,10 +68,34 @@ footer{
     position: fixed;
     z-index:100;
     bottom: 0;
-    left: 10px;
+    left:0;
+    padding-right: 1rem;
     width: 100%;
 }
 
+.social-icons{
+    float: right;
+  }
+
+.fa{
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
+    cursor:pointer;
+
+    &:hover{
+        transform:translate(0px, -5px);
+    }
+}
+
+button{
+    background-color:transparent;
+    color:white;
+    border:none;
+    
+}
 section{
     min-height: 100vh;
     width: 100%;
@@ -162,7 +190,7 @@ h2{
     }
 }
 
-
+//Home Page
 .home-content{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -215,6 +243,7 @@ h2{
     }
 }
 
+//Used for titles of each page 
 .title-main{
     text-align: center;
     h2{
@@ -240,6 +269,7 @@ h2{
     }
 }
 
+//About Page
 .aboutContainer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -303,5 +333,19 @@ h2{
             text-transform:uppercase;
             font-size:1.5rem;
         }
+    }
+}
+
+//Resume Page 
+.resumeContainer{
+    display:flex;
+    justify-content: center;
+    padding-left:2.5rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    padding-right:2rem; 
+    
+    .resumeObject{
+        
     }
 }
