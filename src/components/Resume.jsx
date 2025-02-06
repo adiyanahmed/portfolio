@@ -2,10 +2,10 @@ import React from 'react';
 
 const Resume = () => {
     return (
-        <div id="resume" name="resume" className="h-full w-full bg-[#1a1639] py-16">
+        <div id="resume" name="resume" className="h-auto w-full bg-[#1a1639] sm:pt-[76px] pt-[36px] pb-10">
             <div className="max-w-[1000px] mx-auto px-8">
                 {/* Resume Header */}
-                <div className="text-center pb-8 w-full">
+                <div className="sm:text-center pb-8 w-full">
                     <p className="text-[#faa843] text-4xl font-bold inline border-b-4">
                         Resume
                     </p>

@@ -3,8 +3,8 @@ import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
 const Contact = () => {
     return (
-        <div name='contact' className='h-screen w-full bg-[#1a1639]'>
-            <div className='flex flex-col w-full h-full justify-center items-center'>
+        <div name='contact' className='h-full w-full bg-[#1a1639] sm:pt-[76px] pt-[36px] sm:pb-36 pb-16'>
+            <div className='flex flex-col w-full  justify-center items-center'>
                 <div className='max-w-[1000px] w-full px-8 sm:px-4'>
                     {/* Contact Header */}
                     <div className='sm:text-center pb-8'>
